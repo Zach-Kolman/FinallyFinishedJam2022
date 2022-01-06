@@ -17,6 +17,13 @@ public class PlayerController : MonoBehaviour
     public Transform cmt;
 
     public float speed;
+
+    public bool controlsEnabled;
+
+    public Transform enterPoint;
+    public bool canEnter = false;
+    public bool canExit = false;
+    public Vector3 offset;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +33,15 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MovePlayer();
+        if(controlsEnabled)
+        {
+            MovePlayer();
+        }
+
+        if (canEnter)
+        {
+            MoveToCar();
+        }
 
         curCam = CM.GetComponent<CamManager>().curCam;
 
@@ -63,5 +78,28 @@ public class PlayerController : MonoBehaviour
             cont.Move(moveDir.normalized * Time.deltaTime * speed);
         }
 
+    }
+
+    public IEnumerator SetEnter()
+    {
+        yield return new WaitForSeconds(2);
+        canEnter = true;
+    }
+
+    void MoveToCar()
+    {
+        offset = enterPoint.position - transform.position;
+
+        if(offset.magnitude > .2f)
+        {
+            offset = offset.normalized * speed;
+            cont.Move(offset * Time.deltaTime);
+        }
+
+        else
+        {
+            canEnter = false;
+            controlsEnabled = true;
+        }
     }
 }
