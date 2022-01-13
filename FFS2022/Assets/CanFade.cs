@@ -9,7 +9,7 @@ public class CanFade : MonoBehaviour
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             screenAnim.SetBool("canFadeOut", true);
             other.GetComponent<PlayerController>().enterPoint = entryPoint;
