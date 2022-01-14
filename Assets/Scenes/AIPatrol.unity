@@ -1032,8 +1032,6 @@ MonoBehaviour:
   - {fileID: 184058927}
   - {fileID: 466473166}
   - {fileID: 2140367779}
-  distanceToStopFromWaypoint: 1
-  isWaiting: 0
 --- !u!1 &2027344511
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,34 @@ public class Patrol : MonoBehaviour
     private string walkAnimVar = "IsWalking";
     private string velocityAnimVar = "Velocity";
 
+    #if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        if(Waypoints.Count > 0)
+        {
+            if(Waypoints.Count > 0 && currentWaypoint == Waypoints[0])
+            {
+                Gizmos.color = new Color(0.0f, 0.0f, 1.0f, 0.35f);
+                Gizmos.DrawLine(this.transform.position, currentWaypoint.transform.position);
+            }
+            Gizmos.color = new Color(1.0f, 0.0f, 0.0f, 0.35f);
+            int idx = 1;
+            foreach(Waypoint p in Waypoints)
+            {
+                if(idx < Waypoints.Count)
+                {
+                    Gizmos.DrawLine(p.transform.position, Waypoints[idx].transform.position);
+                    idx++;
+                }
+                else
+                {
+                    Gizmos.DrawLine(p.transform.position, Waypoints[0].transform.position);
+                }
+            }
+        }
+    }
+    #endif
+
     // Start is called before the first frame update
     void Start()
     {
