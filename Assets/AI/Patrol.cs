@@ -6,6 +6,15 @@ using UnityEngine.AI;
 public class Patrol : MonoBehaviour
 {
     public Animator EnemyAnimator;
+    public bool DrawViewGizmo = false;
+    public bool DrawGizmoToFirstWaypoint = false;
+    public GameObject Player;
+    public Animator EnemyAnimator;
+    public Transform HeadJoint;
+    public float ViewDistance = 0.0f;
+    public float ViewAngle = 85.0f;
+    public bool SeesPlayer;
+    public bool ArrivedAtPlayer;
     public List<Waypoint> Waypoints;
 
     private int waypointIdx;
@@ -21,6 +30,24 @@ public class Patrol : MonoBehaviour
     #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
+        if(DrawViewGizmo && HeadJoint)
+        {
+            if(SeesPlayer)
+            {
+                Gizmos.color = new Color(1.0f, 0.0f, 0.0f, 0.6f);
+            }
+            else
+            {
+                Gizmos.color = new Color(1.0f, 1.0f, 0.5f, 0.3f);
+            }
+            Vector3 HeadPosition = new Vector3(HeadJoint.transform.position.x, HeadJoint.transform.position.y+0.15f, HeadJoint.transform.position.z);
+            Matrix4x4 HeadPositionMatrix = Matrix4x4.TRS(HeadPosition, HeadJoint.transform.rotation, HeadJoint.transform.localScale);
+            Matrix4x4 prevMatrix = Gizmos.matrix;
+            Gizmos.matrix = HeadPositionMatrix;
+            Gizmos.DrawFrustum(Vector3.zero, ViewAngle, ViewDistance, MinViewAngle, 1.0f);
+            Gizmos.matrix = prevMatrix;
+        }
+
         if(Waypoints.Count > 0)
         {
             if(Waypoints.Count > 0 && currentWaypoint == Waypoints[0])
@@ -56,28 +83,56 @@ public class Patrol : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        if(isWaiting)
+        if(this.SeesPlayer)
         {
-            waitTimer -= Time.deltaTime;
-            if(waitTimer <= 0.0f)
+            if(Vector3.Distance(Player.transform.position, this.transform.position) < EnemyAgent.stoppingDistance*2)
             {
-                isWaiting = false;
-                MoveToNextWaypoint();
+                this.ArrivedAtPlayer = true;
+                this.EnemyAnimator.SetBool(walkAnimVar, false);
+                EnemyAgent.SetDestination(this.transform.position);
+            }
+            else
+            {
+                this.EnemyAnimator.SetBool(walkAnimVar, true);
+                EnemyAgent.SetDestination(this.Player.transform.position);
             }
         }
         else
         {
-             EnemyAgent.SetDestination(currentWaypoint.transform.position);
-             EnemyAnimator.SetFloat(velocityAnimVar, EnemyAgent.velocity.magnitude);
-            if(Vector3.Distance(
-                currentWaypoint.transform.position, this.transform.position) < EnemyAgent.stoppingDistance)
+            Vector3 DirectionToPlayer = Player.transform.position - this.transform.position;
+            float ViewAngleToPlayer = Vector3.Angle(DirectionToPlayer, this.transform.forward);
+            if(DirectionToPlayer.magnitude < ViewDistance && ViewAngleToPlayer < ViewAngle)
             {
-                this.EnemyAnimator.SetBool(walkAnimVar, false);
-                EnemyAgent.SetDestination(this.transform.position);
-                isWaiting = true;
-                waitTimer = currentWaypoint.timeToWaitBeforeMove;
+                this.SeesPlayer = true;
+            }
+            else
+            {
+                this.SeesPlayer = false;
+            }
+
+            if(isWaiting)
+            {
+                waitTimer -= Time.deltaTime;
+                if(waitTimer <= 0.0f)
+                {
+                    isWaiting = false;
+                    MoveToNextWaypoint();
+                }
+            }
+            else
+            {
+                EnemyAgent.SetDestination(currentWaypoint.transform.position);
+                EnemyAnimator.SetFloat(velocityAnimVar, EnemyAgent.velocity.magnitude);
+                if(Vector3.Distance(
+                    currentWaypoint.transform.position, this.transform.position) < EnemyAgent.stoppingDistance)
+                {
+                    this.EnemyAnimator.SetBool(walkAnimVar, false);
+                    EnemyAgent.SetDestination(this.transform.position);
+                    isWaiting = true;
+                    waitTimer = currentWaypoint.timeToWaitBeforeMove;
+                }
             }
         }
     }
