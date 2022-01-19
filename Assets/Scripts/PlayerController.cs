@@ -27,11 +27,13 @@ public class PlayerController : MonoBehaviour
     public bool canExit = false;
 
     public Vector3 offset;
+
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         cont = gameObject.GetComponent<CharacterController>();
-
+        animator = transform.GetChild(0).GetComponent<Animator>();
         cmt = null;
     }
 
@@ -74,9 +76,9 @@ public class PlayerController : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
-        Vector3 direction = new Vector3(horizontal, 0, vertical).normalized;
-        //animator.SetFloat("x", direction.x);
-        //animator.SetFloat("y", direction.z);
+        Vector3 direction = new Vector3(horizontal, 0, vertical);
+        animator.SetFloat("x", direction.x);
+        animator.SetFloat("y", direction.z);
 
 
 
