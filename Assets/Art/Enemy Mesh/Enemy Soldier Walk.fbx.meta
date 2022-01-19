@@ -9,7 +9,42 @@ ModelImporter:
   - first:
       74: 6165553400957861818
     second: rifle walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boots
+    second: {fileID: 2100000, guid: 78b3708a947e1f84ab9d304c7b827818, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Head
+    second: {fileID: 2100000, guid: 4929ba58af871544289f40d5a5e5d4aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knee Edge
+    second: {fileID: 2100000, guid: cb25b41bfae7d2346a23e8aeec05684a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pants
+    second: {fileID: 2100000, guid: 9ae5236c348f48a46bb2f61e121e11bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sh STrap Side
+    second: {fileID: 2100000, guid: 2af4720a611ea2943a8c808eaf0b8f83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shirt
+    second: {fileID: 2100000, guid: 4b0e9904474440948b5874fc9abfbb46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Straps
+    second: {fileID: 2100000, guid: 01231951f21e98a4a88a4b3e2407a649, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -140,8 +175,1654 @@ ModelImporter:
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
-    human: []
-    skeleton: []
+    human:
+    - boneName: mixamorig:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: mixamorig:Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Enemy Soldier Walk(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.000000081460335, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:Hips
+      parentName: Armature
+      position: {x: -0.0006848173, y: 1.1300479, z: -0.001900973}
+      rotation: {x: -0.00000017009022, y: 0.004732103, z: -0.0000000015332222, w: 0.9999888}
+      scale: {x: 1, y: 0.9999997, z: 1}
+    - name: mixamorig:Spine
+      parentName: mixamorig:Hips
+      position: {x: 0.0000000010896474, y: 0.084264025, z: -0.0027411256}
+      rotation: {x: -0.016258685, y: -0.000000025028893, z: -0.0000000029819016, w: 0.99986786}
+      scale: {x: 1.000078, y: 1, z: 1.000039}
+    - name: mixamorig:Spine1
+      parentName: mixamorig:Spine
+      position: {x: 0.0000000011955853, y: 0.09835986, z: 0.000000007150811}
+      rotation: {x: -0.00000006891787, y: -6.187584e-11, z: 0.000000001901937, w: 1}
+      scale: {x: 1.0000775, y: 1, z: 1.0000389}
+    - name: mixamorig:Spine2
+      parentName: mixamorig:Spine1
+      position: {x: -6.658956e-10, y: 0.1124118, z: -0.000000009988434}
+      rotation: {x: 0.000000057742, y: -0.000000007131108, z: -0.0000000011279544, w: 1}
+      scale: {x: 1.0000778, y: 1.0000193, z: 1.0000389}
+    - name: mixamorig:Neck
+      parentName: mixamorig:Spine2
+      position: {x: 0.0000000023003666, y: 0.12646289, z: -0.0000000108359375}
+      rotation: {x: 0.016258689, y: -2.1837199e-11, z: 0.0000000013430765, w: 0.99986786}
+      scale: {x: 1.0000045, y: 0.9999991, z: 1.0000005}
+    - name: mixamorig:Head
+      parentName: mixamorig:Neck
+      position: {x: -0.000000009201466, y: 0.06996089, z: 0.017569287}
+      rotation: {x: 0.000000018626451, y: 0.0000000035820045, z: -8.955022e-10, w: 1}
+      scale: {x: 0.9999946, y: 1.0000013, z: 0.9999952}
+    - name: mixamorig:HeadTop_End
+      parentName: mixamorig:Head
+      position: {x: 0.0000000019371509, y: 0.23098426, z: 0.058007192}
+      rotation: {x: -0, y: 1.5543122e-15, z: -4.4775128e-10, w: 1}
+      scale: {x: 1.0000055, y: 0.9999996, z: 0.99999565}
+    - name: mixamorig:HeadTop_End_end
+      parentName: mixamorig:HeadTop_End
+      position: {x: -0, y: 0.2381565, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftShoulder
+      parentName: mixamorig:Spine2
+      position: {x: -0.06273345, y: 0.106286205, z: -0.0003450279}
+      rotation: {x: 0.56846917, y: -0.4195129, z: 0.571536, w: 0.41737086}
+      scale: {x: 1.0000377, y: 1.0000519, z: 1.0000287}
+    - name: mixamorig:LeftArm
+      parentName: mixamorig:LeftShoulder
+      position: {x: 0.000000022277234, y: 0.13140874, z: -0.00000008571892}
+      rotation: {x: -0.12400992, y: -0.00010749696, z: 0.003050297, w: 0.9922763}
+      scale: {x: 1, y: 1.0029281, z: 0.997102}
+    - name: mixamorig:LeftForeArm
+      parentName: mixamorig:LeftArm
+      position: {x: -0.000000029057263, y: 0.25459173, z: 0.0000000014528632}
+      rotation: {x: 0.021310305, y: -0.0032042006, z: 0.03704058, w: -0.99908143}
+      scale: {x: 1.0001291, y: 0.99987334, z: 1.0000254}
+    - name: mixamorig:LeftHand
+      parentName: mixamorig:LeftForeArm
+      position: {x: -0.00000006973743, y: 0.23811975, z: 0}
+      rotation: {x: 0.0091101285, y: -0.00031904457, z: 0.03485478, w: 0.99935085}
+      scale: {x: 1.0063783, y: 0.9940761, z: 0.9997483}
+    - name: mixamorig:LeftHandThumb1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.026802164, y: 0.051869508, z: 0.007187397}
+      rotation: {x: 0.030468844, y: -0.0051379115, z: -0.40881443, w: 0.91209435}
+      scale: {x: 0.9668349, y: 1.0364884, z: 0.9980525}
+    - name: mixamorig:LeftHandThumb2
+      parentName: mixamorig:LeftHandThumb1
+      position: {x: -0.005712069, y: 0.0467125, z: 0.00000015497207}
+      rotation: {x: 0.013659894, y: 0.0024066817, z: 0.12476397, w: 0.99208945}
+      scale: {x: 1.0000588, y: 1.0066808, z: 0.9933332}
+    - name: mixamorig:LeftHandThumb3
+      parentName: mixamorig:LeftHandThumb2
+      position: {x: 0.005642688, y: 0.02527844, z: 0.0000002169609}
+      rotation: {x: -0.032149103, y: -0.008872264, z: -0.074075446, w: 0.9966948}
+      scale: {x: 1.0000275, y: 0.9143005, z: 1.0966026}
+    - name: mixamorig:LeftHandThumb4
+      parentName: mixamorig:LeftHandThumb3
+      position: {x: 0.00006939649, y: 0.01626607, z: 0.00000007361173}
+      rotation: {x: 0.0000000745058, y: 0.00000009332622, z: 0.00000014976904, w: 1}
+      scale: {x: 1.000025, y: 1.0000147, z: 1.0000035}
+    - name: mixamorig:LeftHandThumb4_end
+      parentName: mixamorig:LeftHandThumb4
+      position: {x: -0, y: 0.016266122, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandIndex1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.039063577, y: 0.13892962, z: 0.00006234333}
+      rotation: {x: 0.025605012, y: -0.0021422207, z: -0.08334466, w: 0.9961895}
+      scale: {x: 0.9882549, y: 1.0133914, z: 0.99870825}
+    - name: mixamorig:LeftHandIndex2
+      parentName: mixamorig:LeftHandIndex1
+      position: {x: 0.000012498497, y: 0.024052829, z: -0.00000002324581}
+      rotation: {x: 0.0019298829, y: -0.00000024726614, z: 0.00000016146805, w: 0.9999982}
+      scale: {x: 1.0000887, y: 1.000198, z: 0.999909}
+    - name: mixamorig:LeftHandIndex3
+      parentName: mixamorig:LeftHandIndex2
+      position: {x: -0.000003556609, y: 0.022037633, z: -0.00000002324581}
+      rotation: {x: 0.030541945, y: 0.00000045375975, z: 0.00000018773503, w: 0.9995335}
+      scale: {x: 1.000012, y: 1.0024794, z: 0.99756145}
+    - name: mixamorig:LeftHandIndex4
+      parentName: mixamorig:LeftHandIndex3
+      position: {x: -0.000008918642, y: 0.018370131, z: -0.00000004261732}
+      rotation: {x: -0.00000006332993, y: 0.00000005606943, z: 0.000000026453169, w: 1}
+      scale: {x: 1.0000343, y: 1.0000467, z: 1.0000197}
+    - name: mixamorig:LeftHandIndex4_end
+      parentName: mixamorig:LeftHandIndex4
+      position: {x: -0, y: 0.018370045, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandMiddle1
+      parentName: mixamorig:LeftHand
+      position: {x: 0.013463431, y: 0.13887829, z: -0.0014405352}
+      rotation: {x: 0.02063268, y: -0.000663754, z: -0.032158088, w: 0.99926966}
+      scale: {x: 0.99540985, y: 1.0058607, z: 0.9989268}
+    - name: mixamorig:LeftHandMiddle2
+      parentName: mixamorig:LeftHandMiddle1
+      position: {x: -0.000024818777, y: 0.02841157, z: -0.0000000077486035}
+      rotation: {x: 0.000016659496, y: -0.0000005697365, z: -0.0000004347375, w: 1}
+      scale: {x: 1.0000255, y: 1.0000216, z: 1.0000229}
+    - name: mixamorig:LeftHandMiddle3
+      parentName: mixamorig:LeftHandMiddle2
+      position: {x: 0.00000027120112, y: 0.026691085, z: 0}
+      rotation: {x: 0.03982195, y: 0.000056369543, z: 0.00029741746, w: 0.9992068}
+      scale: {x: 1.0000209, y: 1.0059371, z: 0.9941104}
+    - name: mixamorig:LeftHandMiddle4
+      parentName: mixamorig:LeftHandMiddle3
+      position: {x: 0.00002458632, y: 0.022397097, z: 0.000000027120112}
+      rotation: {x: 0.00000010430813, y: -0.0000001399122, z: -0.000000100723554, w: 1}
+      scale: {x: 0.999995, y: 1.0000018, z: 0.9999945}
+    - name: mixamorig:LeftHandMiddle4_end
+      parentName: mixamorig:LeftHandMiddle4
+      position: {x: -0, y: 0.0223972, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandRing1
+      parentName: mixamorig:LeftHand
+      position: {x: -0.015427175, y: 0.1368358, z: 0.00012263909}
+      rotation: {x: 0.015390379, y: 0.0010712483, z: 0.03018698, w: 0.9994252}
+      scale: {x: 1.0069017, y: 0.99433917, z: 0.9989423}
+    - name: mixamorig:LeftHandRing2
+      parentName: mixamorig:LeftHandRing1
+      position: {x: -0.000012552738, y: 0.024947077, z: -0.00000004649162}
+      rotation: {x: -0.002310069, y: 0.00000019156138, z: 0.00000012376402, w: 0.9999973}
+      scale: {x: 1.0000347, y: 0.9998713, z: 1.0001755}
+    - name: mixamorig:LeftHandRing3
+      parentName: mixamorig:LeftHandRing2
+      position: {x: 0.00000588119, y: 0.025486346, z: -0.0000000038743018}
+      rotation: {x: 0.038336795, y: -0.000018894409, z: 0.000030703766, w: 0.9992649}
+      scale: {x: 1.0000229, y: 1.0068274, z: 0.9932883}
+    - name: mixamorig:LeftHandRing4
+      parentName: mixamorig:LeftHandRing3
+      position: {x: 0.000006725788, y: 0.021546429, z: -0.00000008910894}
+      rotation: {x: -0.00000014156105, y: 0.000000011879764, z: 0.0000000700538, w: 1}
+      scale: {x: 1.0000336, y: 1.000046, z: 1.0000085}
+    - name: mixamorig:LeftHandRing4_end
+      parentName: mixamorig:LeftHandRing4
+      position: {x: -0, y: 0.021546595, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftHandPinky1
+      parentName: mixamorig:LeftHand
+      position: {x: -0.037099835, y: 0.12364394, z: -0.0007523129}
+      rotation: {x: -0.009531493, y: -0.006611077, z: -0.024522582, w: -0.99963206}
+      scale: {x: 1.0223074, y: 0.9802425, z: 0.99792296}
+    - name: mixamorig:LeftHandPinky2
+      parentName: mixamorig:LeftHandPinky1
+      position: {x: -0.0000049591063, y: 0.02099141, z: -0.000000027120112}
+      rotation: {x: -0.012687664, y: 0.0000002905726, z: 0.00000007607739, w: 0.9999196}
+      scale: {x: 1.00006, y: 0.998852, z: 1.0012691}
+    - name: mixamorig:LeftHandPinky3
+      parentName: mixamorig:LeftHandPinky2
+      position: {x: 0.0000019216536, y: 0.020385573, z: 0.0000000038743018}
+      rotation: {x: -0.0058053443, y: -0.0000005111162, z: -0.00000020242565, w: 0.99998313}
+      scale: {x: 1.0000324, y: 0.99916565, z: 1.0009292}
+    - name: mixamorig:LeftHandPinky4
+      parentName: mixamorig:LeftHandPinky3
+      position: {x: 0.0000030374526, y: 0.016732624, z: -0.0000000077486035}
+      rotation: {x: -0.00000007264313, y: 0.000000032518518, z: 0.000000029688424, w: 1}
+      scale: {x: 1.0000265, y: 1.0000418, z: 1.0000317}
+    - name: mixamorig:LeftHandPinky4_end
+      parentName: mixamorig:LeftHandPinky4
+      position: {x: -0, y: 0.016732657, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightShoulder
+      parentName: mixamorig:Spine2
+      position: {x: 0.06273345, y: 0.10630634, z: -0.00096700975}
+      rotation: {x: -0.56556123, y: -0.4216715, z: 0.5742797, w: -0.415375}
+      scale: {x: 1.0000312, y: 1.0000387, z: 1.0000086}
+    - name: mixamorig:RightArm
+      parentName: mixamorig:RightShoulder
+      position: {x: -0.000000027120112, y: 0.13140878, z: 0.00000008426606}
+      rotation: {x: -0.12351477, y: -0.0018977819, z: 0.011273235, w: 0.99227685}
+      scale: {x: 1.0000191, y: 1.0029768, z: 0.9971112}
+    - name: mixamorig:RightForeArm
+      parentName: mixamorig:RightArm
+      position: {x: 0.00000008232891, y: 0.25458375, z: 0.00000002130866}
+      rotation: {x: -0.021245372, y: -0.0031909454, z: 0.037716743, w: 0.99905753}
+      scale: {x: 1.0001059, y: 0.9999014, z: 1.0000346}
+    - name: mixamorig:RightHand
+      parentName: mixamorig:RightForeArm
+      position: {x: 0.000000034384428, y: 0.2386976, z: 0.0000000077486035}
+      rotation: {x: 0.0068406966, y: 0.0048531154, z: -0.04662867, w: 0.9988771}
+      scale: {x: 1.0086389, y: 0.99174315, z: 0.9998605}
+    - name: mixamorig:RightHandThumb1
+      parentName: mixamorig:RightHand
+      position: {x: -0.026821338, y: 0.048646834, z: 0.007855263}
+      rotation: {x: 0.033833154, y: 0.010363877, z: 0.43696412, w: 0.89878273}
+      scale: {x: 0.9676283, y: 1.0355973, z: 0.9980724}
+    - name: mixamorig:RightHandThumb2
+      parentName: mixamorig:RightHandThumb1
+      position: {x: 0.008202393, y: 0.044126857, z: -0.00000009879469}
+      rotation: {x: 0.008163307, y: 0.00066069764, z: -0.07627571, w: 0.99705315}
+      scale: {x: 1.0000408, y: 1.0030731, z: 0.99693084}
+    - name: mixamorig:RightHandThumb3
+      parentName: mixamorig:RightHandThumb2
+      position: {x: -0.0016776056, y: 0.02812261, z: -0.000000032205133}
+      rotation: {x: 0.00005520507, y: -0.00007082789, z: -0.09312144, w: 0.9956548}
+      scale: {x: 0.99999845, y: 0.99998754, z: 1.0000327}
+    - name: mixamorig:RightHandThumb4
+      parentName: mixamorig:RightHandThumb3
+      position: {x: -0.0065249247, y: 0.018427894, z: 0.00000002324581}
+      rotation: {x: -0.00000028312203, y: 0.00000018558545, z: 0.00000005030262, w: 1}
+      scale: {x: 1.0000094, y: 1.0000106, z: 1.0000147}
+    - name: mixamorig:RightHandThumb4_end
+      parentName: mixamorig:RightHandThumb4
+      position: {x: -0, y: 0.01954907, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandIndex1
+      parentName: mixamorig:RightHand
+      position: {x: -0.040287953, y: 0.13814202, z: 0.00018393248}
+      rotation: {x: 0.03673497, y: 0.002928802, z: 0.079413995, w: 0.9961603}
+      scale: {x: 0.98960936, y: 1.0123771, z: 0.99830896}
+    - name: mixamorig:RightHandIndex2
+      parentName: mixamorig:RightHandIndex1
+      position: {x: -0.000023081153, y: 0.02275959, z: -0.000000036805865}
+      rotation: {x: -0.018033955, y: -0.00000042468304, z: -0.0000000432301, w: 0.9998374}
+      scale: {x: 1.000011, y: 0.99924153, z: 1.0008005}
+    - name: mixamorig:RightHandIndex3
+      parentName: mixamorig:RightHandIndex2
+      position: {x: 0.000010927468, y: 0.022306614, z: 0.000000048428774}
+      rotation: {x: 0.03908568, y: -0.00012336767, z: 0.00010642068, w: 0.9992359}
+      scale: {x: 1.0000514, y: 0.9952372, z: 1.0049199}
+    - name: mixamorig:RightHandIndex4
+      parentName: mixamorig:RightHandIndex3
+      position: {x: 0.000012285411, y: 0.017110858, z: -0.000000013560056}
+      rotation: {x: 0.00000006705521, y: 0.00000013793866, z: 0.0000001917286, w: 1}
+      scale: {x: 1.0000542, y: 1.0000788, z: 1.000043}
+    - name: mixamorig:RightHandIndex4_end
+      parentName: mixamorig:RightHandIndex4
+      position: {x: -0, y: 0.017110907, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandMiddle1
+      parentName: mixamorig:RightHand
+      position: {x: -0.013847927, y: 0.13805439, z: -0.00152983}
+      rotation: {x: 0.031354096, y: 0.0012429137, z: 0.039593413, w: 0.99872315}
+      scale: {x: 0.994766, y: 1.0069112, z: 0.9985205}
+    - name: mixamorig:RightHandMiddle2
+      parentName: mixamorig:RightHandMiddle1
+      position: {x: 0.000016942322, y: 0.02799176, z: 0.0000000038743018}
+      rotation: {x: -0.019515945, y: 0.00000025006005, z: 0.00000004972843, w: 0.9998096}
+      scale: {x: 1.0000285, y: 0.9991989, z: 1.0008845}
+    - name: mixamorig:RightHandMiddle3
+      parentName: mixamorig:RightHandMiddle2
+      position: {x: 0.0000073146816, y: 0.02749382, z: 0.00000004068017}
+      rotation: {x: 0.0398135, y: -0.000068964626, z: -0.00034900478, w: 0.99920714}
+      scale: {x: 1.0000522, y: 0.9990556, z: 1.0010754}
+    - name: mixamorig:RightHandMiddle4
+      parentName: mixamorig:RightHandMiddle3
+      position: {x: -0.000024506895, y: 0.022956168, z: 0.000000100731846}
+      rotation: {x: 0.000000052154054, y: 0.000000008730039, z: 0.000000014066536, w: 1}
+      scale: {x: 1.0000342, y: 1.0000513, z: 1.0000201}
+    - name: mixamorig:RightHandMiddle4_end
+      parentName: mixamorig:RightHandMiddle4
+      position: {x: -0, y: 0.022956057, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandRing1
+      parentName: mixamorig:RightHand
+      position: {x: 0.015682025, y: 0.13674797, z: -0.0014125162}
+      rotation: {x: 0.044443432, y: -0.0014296126, z: -0.014951764, w: 0.99889904}
+      scale: {x: 1.0031091, y: 0.99945456, z: 0.9975441}
+    - name: mixamorig:RightHandRing2
+      parentName: mixamorig:RightHandRing1
+      position: {x: -0.0000073495503, y: 0.025243402, z: 0.00000014722346}
+      rotation: {x: -0.027102154, y: -0.000000030850057, z: -0.000000041522068, w: 0.9996327}
+      scale: {x: 1.0000372, y: 0.99889475, z: 1.0011915}
+    - name: mixamorig:RightHandRing3
+      parentName: mixamorig:RightHandRing2
+      position: {x: -0.0000015497208, y: 0.025850821, z: 0.0000000038743018}
+      rotation: {x: -0.040486176, y: -0.0000110206565, z: 0.00008224577, w: 0.99918014}
+      scale: {x: 1.0000372, y: 0.9989717, z: 1.0011265}
+    - name: mixamorig:RightHandRing4
+      parentName: mixamorig:RightHandRing3
+      position: {x: 0.000008612573, y: 0.019267999, z: -0.00000008136034}
+      rotation: {x: 0.000000089406946, y: 0.0000000065859904, z: -0.000000022050807, w: 1}
+      scale: {x: 1.0000325, y: 1.0000226, z: 1.000014}
+    - name: mixamorig:RightHandRing4_end
+      parentName: mixamorig:RightHandRing4
+      position: {x: -0, y: 0.019268148, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightHandPinky1
+      parentName: mixamorig:RightHand
+      position: {x: 0.03845376, y: 0.1261366, z: -0.00056464074}
+      rotation: {x: 0.020507956, y: -0.010754262, z: -0.019684015, w: 0.99953806}
+      scale: {x: 1.0182846, y: 0.98530996, z: 0.9967468}
+    - name: mixamorig:RightHandPinky2
+      parentName: mixamorig:RightHandPinky1
+      position: {x: 0.0000056526064, y: 0.020734059, z: -0.00000015497207}
+      rotation: {x: -0.040392675, y: -0.0000060582524, z: -0.000032535838, w: 0.99918395}
+      scale: {x: 1.0000384, y: 0.99663526, z: 1.0034612}
+    - name: mixamorig:RightHandPinky3
+      parentName: mixamorig:RightHandPinky2
+      position: {x: -0.0000013250112, y: 0.018965274, z: 0.0000000038743018}
+      rotation: {x: 0.014904413, y: -0.0000002347288, z: -0.00000006012482, w: 0.99988896}
+      scale: {x: 1.0000386, y: 1.0034028, z: 0.9967885}
+    - name: mixamorig:RightHandPinky4
+      parentName: mixamorig:RightHandPinky3
+      position: {x: -0.000004130006, y: 0.016103832, z: -0.000000054240225}
+      rotation: {x: 0.00000013411042, y: -0.00000005706974, z: 0.000000032634745, w: 1}
+      scale: {x: 1.00003, y: 1.0000321, z: 1.0000021}
+    - name: mixamorig:RightHandPinky4_end
+      parentName: mixamorig:RightHandPinky4
+      position: {x: -0, y: 0.016104078, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:LeftUpLeg
+      parentName: mixamorig:Hips
+      position: {x: -0.088369004, y: -0.04686849, z: -0.0019493515}
+      rotation: {x: -0.0008078976, y: 0.024291655, z: 0.999162, w: 0.032933816}
+      scale: {x: 1.0000138, y: 1.0000857, z: 1.0000801}
+    - name: mixamorig:LeftLeg
+      parentName: mixamorig:LeftUpLeg
+      position: {x: -0.000000008717179, y: 0.45005652, z: 0.000000030994414}
+      rotation: {x: -0.087154634, y: -0.001893051, z: 0.021606008, w: 0.9959587}
+      scale: {x: 1.0000035, y: 1.0000812, z: 1.000051}
+    - name: mixamorig:LeftFoot
+      parentName: mixamorig:LeftLeg
+      position: {x: 0.0000000038743018, y: 0.50911206, z: -0.000000017434358}
+      rotation: {x: 0.5150407, y: -0.020834638, z: 0.012523661, w: 0.85682094}
+      scale: {x: 0.9999997, y: 1.0000308, z: 1.0000722}
+    - name: mixamorig:LeftToeBase
+      parentName: mixamorig:LeftFoot
+      position: {x: -0.0000000019371509, y: 0.16981897, z: -0.0000000077486035}
+      rotation: {x: -0.2882181, y: 0.05261581, z: -0.015862932, w: -0.9559866}
+      scale: {x: 0.99999744, y: 1.001189, z: 0.99886096}
+    - name: mixamorig:LeftToe_End
+      parentName: mixamorig:LeftToeBase
+      position: {x: 0.0000000121071935, y: 0.07435916, z: -0.000000013560056}
+      rotation: {x: -0.00000011920926, y: 0.0000003129243, z: 0.000000024214382, w: 1}
+      scale: {x: 0.99999756, y: 1.0000548, z: 1.0000422}
+    - name: mixamorig:LeftToe_End_end
+      parentName: mixamorig:LeftToe_End
+      position: {x: -0, y: 0.07435956, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mixamorig:RightUpLeg
+      parentName: mixamorig:Hips
+      position: {x: 0.088369004, y: -0.046868578, z: 0.002273766}
+      rotation: {x: 0.00061714445, y: 0.018616704, z: 0.9992833, w: -0.032954067}
+      scale: {x: 1.0000066, y: 1.0000513, z: 1.000085}
+    - name: mixamorig:RightLeg
+      parentName: mixamorig:RightUpLeg
+      position: {x: -0.000000001695007, y: 0.44983783, z: 0.00000002130866}
+      rotation: {x: -0.08152519, y: 0.0017697703, z: -0.02165375, w: 0.99643445}
+      scale: {x: 0.99999994, y: 1.0000567, z: 1.000056}
+    - name: mixamorig:RightFoot
+      parentName: mixamorig:RightLeg
+      position: {x: -0.000000003934838, y: 0.5091167, z: -0.00000000948381}
+      rotation: {x: 0.5116761, y: 0.021090185, z: -0.012565056, w: 0.8588276}
+      scale: {x: 0.99999636, y: 1.0004334, z: 0.9995845}
+    - name: mixamorig:RightToeBase
+      parentName: mixamorig:RightFoot
+      position: {x: -0.0000000025727784, y: 0.16794007, z: -0.0000000070827078}
+      rotation: {x: -0.29149452, y: -0.05507829, z: 0.01681425, w: -0.9548375}
+      scale: {x: 0.9999674, y: 0.99883866, z: 1.0012255}
+    - name: mixamorig:RightToe_End
+      parentName: mixamorig:RightToeBase
+      position: {x: 9.685754e-10, y: 0.07152068, z: 0.0000000012107193}
+      rotation: {x: -0, y: -0.00000023469329, z: -0.000000063329935, w: 1}
+      scale: {x: 1.0000026, y: 1.0000309, z: 1.0000314}
+    - name: mixamorig:RightToe_End_end
+      parentName: mixamorig:RightToe_End
+      position: {x: -0, y: 0.07152087, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.161_mesh.182_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000031872187, y: -0.00000005109235, z: 0.0000000020582145}
+      rotation: {x: 0.00000008146034, y: 4.0422284e-16, z: -2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: Retopo_Circle.018_mesh.038_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.056_mesh.077_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000023003667, y: 0.000000064289196, z: -0.0000000019371404}
+      rotation: {x: 0.00000008146034, y: -3.330669e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.102_mesh.123_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.003_mesh.008_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.109_mesh.130_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.009_mesh.023_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.064_mesh.085_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.162_mesh.183_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000032326202, y: -0.00000013148411, z: -0.0000000020582442}
+      rotation: {x: 0.00000008146036, y: 1.1657342e-15, z: -8.881784e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.019_mesh.039_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.057_mesh.078_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000008717179, y: -0.000000028209762, z: -0.000000005811457}
+      rotation: {x: 0.00000008146034, y: -1.0547119e-15, z: 1.577722e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.103_mesh.124_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.002_mesh.006_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.110_mesh.131_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.010_mesh.024_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.065_mesh.086_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.163_mesh.184_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000031872187, y: -0.00000005109235, z: 0.0000000020582145}
+      rotation: {x: 0.00000008146034, y: 4.0422284e-16, z: -2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: Retopo_Circle.020_mesh.040_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.058_mesh.079_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000023003667, y: 0.000000064289196, z: -0.0000000019371404}
+      rotation: {x: 0.00000008146034, y: -3.330669e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.104_mesh.125_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.008_mesh.022_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.011_mesh.025_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.111_mesh.132_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.066_mesh.087_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.164_mesh.185_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000032326202, y: -0.00000013148411, z: -0.0000000020582442}
+      rotation: {x: 0.00000008146036, y: 1.1657342e-15, z: -8.881784e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.021_mesh.041_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.059_mesh.080_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000054240225, y: 0.00000002324581, z: -0.000000004842873}
+      rotation: {x: 0.00000008146035, y: -8.881784e-16, z: -9.103903e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.105_mesh.126_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000015491077, y: 0.00000007966533, z: 0.0000000015134121}
+      rotation: {x: 0.00000008146035, y: -3.0184188e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.007_mesh.021_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.012_mesh.026_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.112_mesh.133_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.067_mesh.088_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.106_mesh.127_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000099278985, y: 0.0000000016950072, z: -0.0000000016420374}
+      rotation: {x: 0.00000008146034, y: -2.0816682e-17, z: -1.3877788e-17, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.022_mesh.042_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.060_mesh.081_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000008717179, y: -0.000000028209762, z: -0.000000005811457}
+      rotation: {x: 0.00000008146034, y: -1.0547119e-15, z: 1.577722e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.113_mesh.134_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.006_mesh.016_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.014_mesh.029_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.068_mesh.089_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.061_mesh.082_ShirtVest
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000015491077, y: 0.00000007966533, z: 0.0000000015134121}
+      rotation: {x: 0.00000008146035, y: -3.0184188e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.023_mesh.043_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.107_mesh.128_Pants
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -4.2375176e-10, y: 0.000000035352993, z: 0.000000010624068}
+      rotation: {x: 0.00000008146036, y: 9.483233e-17, z: -5.551115e-17, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.114_mesh.135_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.005_mesh.014_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.016_mesh.036_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.107_mesh.128_KneeEdge
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -4.2375176e-10, y: 0.000000035352993, z: 0.000000010624068}
+      rotation: {x: 0.00000008146036, y: 9.483233e-17, z: -5.551115e-17, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.062_mesh.083_ShirtVest
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000032326202, y: -0.00000013148411, z: -0.0000000020582442}
+      rotation: {x: 0.00000008146036, y: 1.1657342e-15, z: -8.881784e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.024_mesh.044_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.070_mesh.091_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.004_mesh.013_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000032326202, y: -0.00000013148411, z: -0.0000000020582442}
+      rotation: {x: 0.00000008146036, y: 1.1657342e-15, z: -8.881784e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.017_mesh.037_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.00000002312474, y: 0.000000023730097, z: -0.0000000050850164}
+      rotation: {x: 0.00000008146035, y: -7.771561e-16, z: 2.3665829e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.115_mesh.136_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.108_mesh.129_Pants
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000099278985, y: 0.0000000016950072, z: -0.0000000016420374}
+      rotation: {x: 0.00000008146034, y: -2.0816682e-17, z: -1.3877788e-17, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.063_mesh.084_Pants
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.025_mesh.045_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.108_mesh.129_KneeEdge
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000099278985, y: 0.0000000016950072, z: -0.0000000016420374}
+      rotation: {x: 0.00000008146034, y: -2.0816682e-17, z: -1.3877788e-17, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.071_mesh.092_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.146_mesh.167_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.0747293e-16, y: -0.00000004649162, z: 0.000000003874294}
+      rotation: {x: 0.00000008146034, y: -0, z: -3.9443045e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.001_mesh.003_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000032326202, y: -0.00000013148411, z: -0.0000000020582442}
+      rotation: {x: 0.00000008146036, y: 1.1657342e-15, z: -8.881784e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.033_mesh.054_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.048_mesh.069_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.116_mesh.137_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.079_mesh.100_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.131_mesh.152_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.154_mesh.175_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.026_mesh.046_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.041_mesh.062_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.087_mesh.108_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.124_mesh.145_Pants
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -4.2375176e-10, y: 0.000000035352993, z: 0.000000010624068}
+      rotation: {x: 0.00000008146036, y: 9.483233e-17, z: -5.551115e-17, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.072_mesh.093_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.095_mesh.116_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.139_mesh.160_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.147_mesh.168_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.0747293e-16, y: -0.00000004649162, z: 0.000000003874294}
+      rotation: {x: 0.00000008146034, y: -0, z: -3.9443045e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.117_mesh.138_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.034_mesh.055_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.049_mesh.070_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.080_mesh.101_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.132_mesh.153_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.027_mesh.047_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.042_mesh.063_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.140_mesh.161_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000016707926, y: 0.000000117560845, z: 0.0000000058114717}
+      rotation: {x: 0.00000008146034, y: -3.330669e-16, z: 6.465219e-38, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.155_mesh.176_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.088_mesh.109_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.125_mesh.146_Pants
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000099278985, y: 0.0000000016950072, z: -0.0000000016420374}
+      rotation: {x: 0.00000008146034, y: -2.0816682e-17, z: -1.3877788e-17, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.073_mesh.094_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.096_mesh.117_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.001_mesh.003_StrapMesh
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000032326202, y: -0.00000013148411, z: -0.0000000020582442}
+      rotation: {x: 0.00000008146036, y: 1.1657342e-15, z: -8.881784e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.035_mesh.056_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.050_mesh.071_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.148_mesh.169_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.118_mesh.139_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.081_mesh.102_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.133_mesh.154_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.156_mesh.177_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000015491077, y: 0.00000007966533, z: 0.0000000015134121}
+      rotation: {x: 0.00000008146035, y: -3.0184188e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.001_mesh.003_ShStrapSide
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000032326202, y: -0.00000013148411, z: -0.0000000020582442}
+      rotation: {x: 0.00000008146036, y: 1.1657342e-15, z: -8.881784e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.028_mesh.048_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.043_mesh.064_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.126_mesh.147_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000023003667, y: 0.000000064289196, z: -0.0000000019371404}
+      rotation: {x: 0.00000008146034, y: -3.330669e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.141_mesh.162_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000060051676, y: 0.000000038016587, z: 0.0000000019371569}
+      rotation: {x: 0.00000008146034, y: 1.110223e-16, z: 1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.074_mesh.095_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.089_mesh.110_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.097_mesh.118_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.119_mesh.140_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle_mesh.049_ShStrapSide
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000043101608, y: -0.000000118166206, z: -0.00000000193717}
+      rotation: {x: 0.00000008146034, y: 8.187895e-16, z: -4.440892e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.036_mesh.057_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.051_mesh.072_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.149_mesh.170_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.082_mesh.103_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.134_mesh.155_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.090_mesh.111_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.142_mesh.163_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000007761058, y: 0.0000000024214384, z: 3.934842e-10}
+      rotation: {x: 0.00000008146035, y: 3.0531133e-16, z: 1.9721516e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.157_mesh.178_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000015491077, y: 0.00000007966533, z: 0.0000000015134121}
+      rotation: {x: 0.00000008146035, y: -3.0184188e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle_mesh.049_StrapMesh
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000031872187, y: -0.00000005109235, z: 0.0000000020582145}
+      rotation: {x: 0.00000008146034, y: 4.0422284e-16, z: -2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: Retopo_Circle.029_mesh.050_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.044_mesh.065_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.127_mesh.148_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000023003667, y: 0.000000064289196, z: -0.0000000019371404}
+      rotation: {x: 0.00000008146034, y: -3.330669e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.075_mesh.096_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.098_mesh.119_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle_mesh.049_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000043101608, y: -0.000000118166206, z: -0.00000000193717}
+      rotation: {x: 0.00000008146034, y: 8.187895e-16, z: -4.440892e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.037_mesh.058_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.052_mesh.073_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.150_mesh.171_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.120_mesh.141_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.083_mesh.104_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.135_mesh.156_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.143_mesh.164_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000099278985, y: 0.0000000016950072, z: -0.0000000016420374}
+      rotation: {x: 0.00000008146034, y: -2.0816682e-17, z: -1.3877788e-17, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.158_mesh.179_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000015491077, y: 0.00000007966533, z: 0.0000000015134121}
+      rotation: {x: 0.00000008146035, y: -3.0184188e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.030_mesh.051_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.045_mesh.066_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.128_mesh.149_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000023003667, y: 0.000000064289196, z: -0.0000000019371404}
+      rotation: {x: 0.00000008146034, y: -3.330669e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.076_mesh.097_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.091_mesh.112_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.099_mesh.120_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.121_mesh.142_ShirtVest
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000007761058, y: 0.0000000024214384, z: 3.934842e-10}
+      rotation: {x: 0.00000008146035, y: 3.0531133e-16, z: 1.9721516e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.038_mesh.059_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.053_mesh.074_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.151_mesh.172_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.084_mesh.105_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.136_mesh.157_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.092_mesh.113_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.159_mesh.180_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000031872187, y: -0.00000005109235, z: 0.0000000020582145}
+      rotation: {x: 0.00000008146034, y: 4.0422284e-16, z: -2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999999}
+    - name: Retopo_Circle.031_mesh.052_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.046_mesh.067_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.129_mesh.150_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000023003667, y: 0.000000064289196, z: -0.0000000019371404}
+      rotation: {x: 0.00000008146034, y: -3.330669e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.077_mesh.098_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.144_mesh.165_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000007761058, y: 0.0000000024214384, z: 3.934842e-10}
+      rotation: {x: 0.00000008146035, y: 3.0531133e-16, z: 1.9721516e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.100_mesh.121_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.122_mesh.143_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.0747293e-16, y: -0.00000004649162, z: 0.000000003874294}
+      rotation: {x: 0.00000008146034, y: -0, z: -3.9443045e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.152_mesh.173_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000029057263, y: 0.00000006780028, z: -0.00000000387429}
+      rotation: {x: 0.00000008146035, y: -3.8857806e-16, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.039_mesh.060_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.054_mesh.075_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.085_mesh.106_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.137_mesh.158_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.093_mesh.114_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.145_mesh.166_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.0000000099278985, y: 0.0000000016950072, z: -0.0000000016420374}
+      rotation: {x: 0.00000008146034, y: -2.0816682e-17, z: -1.3877788e-17, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.160_mesh.181_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000032326202, y: -0.00000013148411, z: -0.0000000020582442}
+      rotation: {x: 0.00000008146036, y: 1.1657342e-15, z: -8.881784e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: Retopo_Circle.032_mesh.053_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.047_mesh.068_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.130_mesh.151_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000008717179, y: -0.000000028209762, z: -0.000000005811457}
+      rotation: {x: 0.00000008146034, y: -1.0547119e-15, z: 1.577722e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.078_mesh.099_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.101_mesh.122_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.123_mesh.144_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000015491077, y: 0.00000007966533, z: 0.0000000015134121}
+      rotation: {x: 0.00000008146035, y: -3.0184188e-16, z: 2.220446e-16, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Retopo_Circle.040_mesh.061_Head
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 2.4130002e-16, y: 3.291985e-23, z: -2.0206058e-16}
+      rotation: {x: 0.00000008146034, y: -2.215138e-39, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Retopo_Circle.153_mesh.174_Straps
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: 0.000000025667248, y: 0.000000032205133, z: -0.0000000019371456}
+      rotation: {x: 0.00000008146034, y: 9.992007e-16, z: 3.1554434e-30, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: Retopo_Circle.086_mesh.107_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.0000000025727784, y: 6.053594e-10, z: 0.0000000010782969}
+      rotation: {x: 0.00000008146034, y: -1.110223e-16, z: -3.330669e-16, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1}
+    - name: Retopo_Circle.138_mesh.159_GlovesBoots
+      parentName: Enemy Soldier Walk(Clone)
+      position: {x: -0.000000004812609, y: 7.264314e-10, z: 9.780343e-10}
+      rotation: {x: 0.00000008146035, y: 2.220446e-16, z: -1.6653345e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
