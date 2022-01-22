@@ -26,7 +26,7 @@ public class CamManager : MonoBehaviour
     {
         foreach (CinemachineVirtualCamera vcam in Cams)
         {
-            vcam.Priority = basePriority - 1;
+            vcam.enabled = false;
         }
 
     }

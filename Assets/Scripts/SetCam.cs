@@ -9,13 +9,14 @@ public class SetCam : MonoBehaviour
     public GameObject camManager;
 
     //set depth of all cameras to 10 minus 1;
-    private void OnTriggerEnter(Collider other)
+    private IEnumerator OnTriggerEnter(Collider other)
     {
         GameObject cMan = camManager;
         if(other.gameObject.tag == "Player")
         {
+            yield return new WaitForSeconds(0f);
             cMan.GetComponent<CamManager>().SwitchCamera();
-            curCam.Priority = cMan.GetComponent<CamManager>().basePriority + 1;
+            curCam.enabled = true;
 
             cMan.GetComponent<CamManager>().curCam = curCam;
         }
