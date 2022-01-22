@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LeaveCar : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class LeaveCar : MonoBehaviour
         {
             other.GetComponent<PlayerController>().exitPoint = exitPoint;
             other.GetComponent<PlayerController>().canExit = true;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
