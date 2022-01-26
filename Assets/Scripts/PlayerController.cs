@@ -29,9 +29,15 @@ public class PlayerController : MonoBehaviour
     public Vector3 offset;
 
     private Animator animator;
+
+    public AudioClip footstep1;
+    public AudioClip footstep2;
+    private AudioSource source;
+
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>();
         cont = gameObject.GetComponent<CharacterController>();
         animator = transform.GetChild(0).GetComponent<Animator>();
         cmt = null;
@@ -140,4 +146,5 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
 }
