@@ -9,6 +9,9 @@ public class GetParentScript : MonoBehaviour
     public AudioClip footstep1;
     public AudioClip footstep2;
 
+    public float minR;
+    public float maxR;
+
     private void Start()
     {
         source = GetComponent<AudioSource>();
@@ -17,14 +20,14 @@ public class GetParentScript : MonoBehaviour
     public void Footstep1()
     {
         source.clip = footstep1;
-        source.pitch = Random.Range(0.9f, 1.0f);
+        source.pitch = Random.Range(minR, maxR);
         source.Play();
     }
 
     public void Footstep2()
     {
         source.clip = footstep2;
-        source.pitch = Random.Range(0.9f, 1.0f);
+        source.pitch = Random.Range(minR, maxR);
         source.Play();
     }
 }
