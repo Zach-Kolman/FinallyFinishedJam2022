@@ -7,28 +7,22 @@ public class PlayerStealth : MonoBehaviour
     public bool CanBeSeen;
     private GameObject[] Lights;
     
-    bool CalculateCanBeSeen(GameObject Light)
+    enum InLight {NO, YES};
+    
+    InLight CalculateCanBeSeen(GameObject Light)
     {
         float LightRange = Light.GetComponent<Light>().range;
         if(Vector3.Distance(this.transform.position, Light.transform.position) < LightRange)
         {
-            return true;
+            RaycastHit hit;
+	    float DistanceToLight = Vector3.Distance(this.transform.position, Light.transform.position);
+	    if(Physics.Raycast(this.transform.position, (Light.transform.position - this.transform.position), out hit, DistanceToLight))
+	    {
+	        return InLight.NO;
+	    }
+	    return InLight.YES;
         }
-        else
-        {
-            return false;
-        }
-    }
-    
-    bool ClearPathToLight(GameObject Light)
-    {
-       RaycastHit hit;
-       float DistanceToLight = Vector3.Distance(this.transform.position, Light.transform.position);
-       if(Physics.Raycast(this.transform.position, (Light.transform.position - this.transform.position), out hit, DistanceToLight))
-       {
-           return false;
-       }
-       return true;
+        return InLight.NO;
     }
     
     #if UNITY_EDITOR
@@ -37,17 +31,9 @@ public class PlayerStealth : MonoBehaviour
         Lights = GameObject.FindGameObjectsWithTag("Light");
         foreach(GameObject x in Lights)
         {
-            bool PlayerInLight;
-            if(CalculateCanBeSeen(x) && ClearPathToLight(x))
-            {
-                PlayerInLight = true;
-            }
-            else
-            {
-                PlayerInLight = false;
-            }
+            InLight PlayerInLight = CalculateCanBeSeen(x);
             
-            if(PlayerInLight)
+            if(PlayerInLight == InLight.YES)
             {
                 Gizmos.color = new Color(1.0f, 0.0f, 0.0f, 0.5f);
             }
@@ -67,6 +53,15 @@ public class PlayerStealth : MonoBehaviour
 
     void LateUpdate()
     {
-        
+        foreach(GameObject x in Lights)
+        {
+            InLight IsVisible = CalculateCanBeSeen(x);
+            if(IsVisible == InLight.YES)
+            {
+                CanBeSeen = true;
+                break;
+            }
+            CanBeSeen = false;
+        }
     }
 }
