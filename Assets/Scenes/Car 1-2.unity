@@ -1226,6 +1226,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1205595682}
     m_Modifications:
+    - target: {fileID: -3783218782013575292, guid: e4b38ceed1edd46e69eb7951d8357ff8, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 6b43635bd891a616aa454c21c9d680d2, type: 2}
     - target: {fileID: 6943830970362426730, guid: e4b38ceed1edd46e69eb7951d8357ff8, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -4680,7 +4684,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842662243}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1842662245
 Camera:
   m_ObjectHideFlags: 0
