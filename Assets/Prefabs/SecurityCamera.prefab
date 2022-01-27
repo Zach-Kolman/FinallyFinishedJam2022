@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3390457626633691106}
   - component: {fileID: 7929722125618745785}
   - component: {fileID: 4962612800972199354}
-  - component: {fileID: 2990767389567523272}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -28,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492784416665836905}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -2.69}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 1, z: 1}
   m_Children:
   - {fileID: 7617963623476401579}
@@ -97,25 +96,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &2990767389567523272
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492784416665836905}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 65257c8a743f4eb479f21e7e073be930, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1490087624956174137
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,6 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1490087624311776928}
+  - component: {fileID: 1175958260}
   m_Layer: 0
   m_Name: SecurityCamera
   m_TagString: Untagged
@@ -141,12 +122,30 @@ Transform:
   m_GameObject: {fileID: 1490087624956174137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.7699907, y: 2.9, z: 6.65}
-  m_LocalScale: {x: 0.43638, y: 0.2453, z: 0.5749}
+  m_LocalScale: {x: 0.43638003, y: 0.2453, z: 0.5749}
   m_Children:
   - {fileID: 7259490701424879682}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1175958260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490087624956174137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f37b7604a13ecb849935641502f1d0f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 30
+  yRotation: 0
+  leftRotationLimit: 45
+  rightRotationLimit: 45
+  currentRotation: 0
+  canRotate: 1
 --- !u!1 &7341258293863695942
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,8 +175,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7341258293863695942}
   m_LocalRotation: {x: -0.24962203, y: 0.24962199, z: 0.66158056, w: 0.6615806}
-  m_LocalPosition: {x: 0, y: -6.5, z: -2.62}
-  m_LocalScale: {x: 194.2866, y: 745.7605, z: 530.76514}
+  m_LocalPosition: {x: -0, y: -5.06, z: -1.81}
+  m_LocalScale: {x: 194.2866, y: 745.7605, z: 386.2431}
   m_Children: []
   m_Father: {fileID: 7259490701424879682}
   m_RootOrder: 0
@@ -243,10 +242,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bb0979265c43ef4db98f5e486911cf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 2990767389567523272}
   render: {fileID: 5902507160551667878}
   cameraMaterialDetected: {fileID: 2100000, guid: a2f62484ec96d0241b0ac0eccad06b92, type: 2}
   uiManager: {fileID: 0}
+  rotateSecurityCamera: {fileID: 1175958260}
 --- !u!64 &8729247071012462844
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -275,7 +274,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
