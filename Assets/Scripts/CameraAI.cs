@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CameraAI : MonoBehaviour
 {
-    public Animator anim;
     public Renderer render;
     public Material cameraMaterialDetected;
     public UIManager uiManager;
@@ -27,7 +26,6 @@ public class CameraAI : MonoBehaviour
         {
             Debug.Log("Caught");
             render.material = cameraMaterialDetected;
-            anim.enabled = false;
             this.gameObject.GetComponent<AudioSource>().Play();
             other.GetComponent<PlayerController>().enabled = false;
             uiManager.GameIsOver();
