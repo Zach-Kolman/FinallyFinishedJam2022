@@ -7,6 +7,7 @@ public class CameraAI : MonoBehaviour
     public Renderer render;
     public Material cameraMaterialDetected;
     public UIManager uiManager;
+    public RotateSecurityCamera rotateSecurityCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class CameraAI : MonoBehaviour
         {
             Debug.Log("Caught");
             render.material = cameraMaterialDetected;
+            rotateSecurityCamera.canRotate = false;
             this.gameObject.GetComponent<AudioSource>().Play();
             other.GetComponent<PlayerController>().enabled = false;
             uiManager.GameIsOver();

@@ -243,6 +243,7 @@ MonoBehaviour:
   render: {fileID: 5902507160551667878}
   cameraMaterialDetected: {fileID: 2100000, guid: a2f62484ec96d0241b0ac0eccad06b92, type: 2}
   uiManager: {fileID: 0}
+  rotateSecurityCamera: {fileID: 1175958260}
 --- !u!64 &8729247071012462844
 MeshCollider:
   m_ObjectHideFlags: 0
