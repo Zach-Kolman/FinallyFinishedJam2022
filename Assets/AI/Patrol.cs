@@ -102,6 +102,19 @@ public class Patrol : MonoBehaviour
             if(DirectionToPlayer.magnitude < ViewDistance && ViewAngleToPlayer < ViewAngle)
             {
                 this.SeesPlayer = true;
+                RaycastHit hit;
+                if(Physics.Raycast(this.transform.position, Player.transform.position - this.transform.position, out hit, 
+                    Vector3.Distance(this.transform.position, Player.transform.position)))
+                {
+                    if (hit.transform.gameObject == Player && Player.GetComponent<PlayerStealth>().CanBeSeen)
+                    {
+                        this.SeesPlayer = false;
+                    }
+                    else
+                    {
+                        this.SeesPlayer = false;
+                    }
+                }
             }
             else
             {

@@ -6,6 +6,8 @@ public class PlayerStealth : MonoBehaviour
 {
     public bool CanBeSeen;
     private GameObject[] Lights;
+
+    private Vector3 HeadHeightVector;
     
     enum InLight {NO, YES};
     
@@ -18,7 +20,7 @@ public class PlayerStealth : MonoBehaviour
         {
             RaycastHit hit;
 	    float DistanceToLight = Vector3.Distance(this.transform.position, Light.transform.position);
-	    if(Physics.Raycast(this.transform.position, (Light.transform.position - this.transform.position), out hit, DistanceToLight, layerMask))
+	    if(Physics.Raycast(HeadHeightVector, (Light.transform.position - this.transform.position), out hit, DistanceToLight, layerMask))
 	    {
 	        return InLight.NO;
 	    }
@@ -43,7 +45,7 @@ public class PlayerStealth : MonoBehaviour
             {
                 Gizmos.color = new Color(0.0f, 0.0f, 1.0f, 0.5f);
             }
-            Gizmos.DrawLine(this.transform.position, x.transform.position);
+            Gizmos.DrawLine(HeadHeightVector, x.transform.position);
         }
     }
     #endif
@@ -51,11 +53,13 @@ public class PlayerStealth : MonoBehaviour
     void Start()
     {
         Lights = GameObject.FindGameObjectsWithTag("Light");
+        HeadHeightVector = new Vector3(this.transform.position.x, this.transform.position.y + 2.0f, this.transform.position.z);
     }
 
     void LateUpdate()
     {
-        foreach(GameObject x in Lights)
+        HeadHeightVector = new Vector3(this.transform.position.x, this.transform.position.y + 2.0f, this.transform.position.z);
+        foreach (GameObject x in Lights)
         {
             InLight IsVisible = CalculateCanBeSeen(x);
             if(IsVisible == InLight.YES)
