@@ -35,9 +35,12 @@ public class PlayerController : MonoBehaviour
     public AudioClip footstep2;
     private AudioSource source;
 
+    private Ray ray;
+
     // Start is called before the first frame update
     void Start()
     {
+        
         baseSpeed = speed;
         source = transform.GetChild(0).GetComponent<AudioSource>();
         cont = gameObject.GetComponent<CharacterController>();
@@ -48,7 +51,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(controlsEnabled)
+        ray = new Ray(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), transform.up);
+        Debug.DrawRay(ray.origin, ray.direction * 2);
+
+        if (controlsEnabled)
         {
             MovePlayer();
         }
@@ -74,15 +80,30 @@ public class PlayerController : MonoBehaviour
             if(!crouching)
             {
                 crouching = !crouching;
-                speed = speed * 0.45f;
-                source.volume = 0.12f;
+                speed = speed / 2;
+                source.volume = 0.15f;
+                cont.height /= 2;
+                cont.center = new Vector3(cont.center.x, cont.center.y - 0.505f, cont.center.z);
             }
 
             else
             {
-                crouching = !crouching;
-                speed = baseSpeed;
-                source.volume = 0.5f;
+                RaycastHit hit;
+                if (Physics.Raycast(ray, 2))
+                {
+                    
+                    print("boob");
+                    
+                }
+
+                else
+                {
+                    crouching = !crouching;
+                    speed = baseSpeed;
+                    source.volume = 0.5f;
+                    cont.height *= 2;
+                    cont.center = new Vector3(cont.center.x, cont.center.y + 0.505f, cont.center.z);
+                }
             }
         }
 
