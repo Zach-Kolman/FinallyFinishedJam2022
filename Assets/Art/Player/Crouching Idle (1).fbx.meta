@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: e767a5da3407d5f4998ff4440b2327d5
+guid: 13ca6d2b6b7d4174c8f22c292fda3f3e
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Slow Run
+    second: Crouching Idle
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -35,15 +35,15 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Slow Run
+      name: Crouching Idle
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 27
+      lastFrame: 75
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
-      cycleOffset: 8
+      cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
@@ -58,21 +58,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.26292142
-        functionName: Footstep1
-        data: 
-        objectReferenceParameter: {fileID: 5364695201670516860, guid: 9d59c2f5715ba6c4ca73e8557b2eadc2, type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.777903
-        functionName: Footstep2
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
