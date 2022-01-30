@@ -11,16 +11,16 @@ public class PlayerStealth : MonoBehaviour
     
     enum InLight {NO, YES};
     
-    InLight CalculateCanBeSeen(GameObject Light)
+    InLight CalculateCanBeSeen(GameObject myLight)
     {
         int layerMask = 1 << 6;
         layerMask = ~layerMask;
-        float LightRange = Light.GetComponent<Light>().range;
-        if(Vector3.Distance(this.transform.position, Light.transform.position) < LightRange)
+        float LightRange = myLight.GetComponent<Light>().range;
+        if((Vector3.Distance(this.transform.position, myLight.transform.position) < LightRange) && myLight.GetComponent<Light>().enabled)
         {
             RaycastHit hit;
-	        float DistanceToLight = Vector3.Distance(this.transform.position, Light.transform.position);
-	        if(Physics.Raycast(HeadHeightVector, (Light.transform.position - this.transform.position), out hit, DistanceToLight, layerMask))
+	        float DistanceToLight = Vector3.Distance(this.transform.position, myLight.transform.position);
+	        if(Physics.Raycast(HeadHeightVector, (myLight.transform.position - this.transform.position), out hit, DistanceToLight, layerMask))
 	        {
 	            return InLight.NO;
 	        }

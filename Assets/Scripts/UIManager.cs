@@ -8,13 +8,16 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject switchPanel;
     [SerializeField] private Text restartText;
     public bool isGameOver = false;
+    public bool showSwitchText = false;
 
     // Start is called before the first frame update
     void Start()
     {
         //Disables panel if active
+        switchPanel.SetActive(false);
         gameOverPanel.SetActive(false);
         restartText.gameObject.SetActive(false);
     }
@@ -26,6 +29,11 @@ public class UIManager : MonoBehaviour
             GetComponent<AudioSource>().Play();
         }
         isGameOver = true;
+    }
+
+    public void ShowSwitchText()
+    {
+        showSwitchText = !showSwitchText;
     }
 
     // Update is called once per frame
@@ -54,6 +62,15 @@ public class UIManager : MonoBehaviour
                 print("Application Quit");
                 Application.Quit();
             }
+        }
+
+        if(showSwitchText)
+        {
+            switchPanel.SetActive(true);
+        }
+        else
+        {
+            switchPanel.SetActive(false);
         }
     }
 

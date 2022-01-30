@@ -45,8 +45,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverPanel: {fileID: 6052250656754159286, guid: a2b8bf669e3a11c4394da3dbea227ce6, type: 3}
+  switchPanel: {fileID: 0}
   restartText: {fileID: 1786418820279066796, guid: 50fc062db3a00cd4eae11d82df981a59, type: 3}
   isGameOver: 0
+  showSwitchText: 0
 --- !u!82 &2137637544912528526
 AudioSource:
   m_ObjectHideFlags: 0
