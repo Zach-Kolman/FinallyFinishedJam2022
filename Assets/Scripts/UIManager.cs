@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private Text restartText;
-    [SerializeField] private bool isGameOver = false;
+    public bool isGameOver = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +19,12 @@ public class UIManager : MonoBehaviour
         restartText.gameObject.SetActive(false);
     }
 
-    public void GameIsOver()
+    public void GameIsOver(bool seenByAI)
     {
+        if(seenByAI)
+        {
+            GetComponent<AudioSource>().Play();
+        }
         isGameOver = true;
     }
 

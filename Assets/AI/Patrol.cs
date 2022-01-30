@@ -85,7 +85,12 @@ public class Patrol : MonoBehaviour
         {
             if(Vector3.Distance(Player.transform.position, this.transform.position) < EnemyAgent.stoppingDistance*2)
             {
-                this.ArrivedAtPlayer = true;
+                if(!this.ArrivedAtPlayer)
+                {
+                    this.ArrivedAtPlayer = true;
+                    GameObject.Find("UIManager").GetComponent<UIManager>().GameIsOver(true);
+                }
+                Player.GetComponent<PlayerController>().enabled = false;
                 this.EnemyAnimator.SetBool(walkAnimVar, false);
                 EnemyAgent.SetDestination(this.transform.position);
             }
