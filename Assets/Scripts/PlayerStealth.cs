@@ -19,12 +19,12 @@ public class PlayerStealth : MonoBehaviour
         if(Vector3.Distance(this.transform.position, Light.transform.position) < LightRange)
         {
             RaycastHit hit;
-	    float DistanceToLight = Vector3.Distance(this.transform.position, Light.transform.position);
-	    if(Physics.Raycast(HeadHeightVector, (Light.transform.position - this.transform.position), out hit, DistanceToLight, layerMask))
-	    {
-	        return InLight.NO;
-	    }
-	    return InLight.YES;
+	        float DistanceToLight = Vector3.Distance(this.transform.position, Light.transform.position);
+	        if(Physics.Raycast(HeadHeightVector, (Light.transform.position - this.transform.position), out hit, DistanceToLight, layerMask))
+	        {
+	            return InLight.NO;
+	        }
+	        return InLight.YES;
         }
         return InLight.NO;
     }

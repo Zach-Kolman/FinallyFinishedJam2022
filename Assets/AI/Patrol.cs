@@ -106,18 +106,17 @@ public class Patrol : MonoBehaviour
             float ViewAngleToPlayer = Vector3.Angle(DirectionToPlayer, this.transform.forward);
             if(DirectionToPlayer.magnitude < ViewDistance && ViewAngleToPlayer < ViewAngle)
             {
-                this.SeesPlayer = true;
+                int layerMask = 1 << 6;
                 RaycastHit hit;
-                if(Physics.Raycast(this.transform.position, Player.transform.position - this.transform.position, out hit, 
-                    Vector3.Distance(this.transform.position, Player.transform.position)))
+                Vector3 HeadPosition = new Vector3(this.transform.position.x, this.transform.position.y+1.5f, this.transform.position.z);
+                Vector3 PlayerHeadPosition = new Vector3(Player.transform.position.x, Player.transform.position.y + 1.5f, Player.transform.position.z);
+                Debug.DrawRay(HeadPosition, (PlayerHeadPosition - HeadPosition), Color.white);
+                if (Physics.Raycast(HeadPosition, (PlayerHeadPosition - HeadPosition), out hit,
+                    Vector3.Distance(HeadPosition, PlayerHeadPosition), layerMask))
                 {
-                    if (hit.transform.gameObject == Player && Player.GetComponent<PlayerStealth>().CanBeSeen)
+                    if(hit.transform.gameObject == Player.gameObject && Player.GetComponent<PlayerStealth>().CanBeSeen)
                     {
-                        this.SeesPlayer = false;
-                    }
-                    else
-                    {
-                        this.SeesPlayer = false;
+                        this.SeesPlayer = true;
                     }
                 }
             }
