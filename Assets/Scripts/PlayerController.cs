@@ -6,25 +6,26 @@ using Cinemachine;
 public class PlayerController : MonoBehaviour
 {
     private CharacterController cont;
-    public float pAngle;
 
+    public float pAngle;
     public float turnSmoothTime = 0.1f;
     public float turnSmoothVelocity;
+    public float speed;
+    private float baseSpeed;
 
     public CinemachineVirtualCamera curCam;
 
     public GameObject CM;
+
     public Transform cmt;
-
-    public float speed;
-
-    public bool controlsEnabled;
-
     public Transform enterPoint;
     public Transform exitPoint;
 
+
+    public bool controlsEnabled;
     public bool canEnter = false;
     public bool canExit = false;
+    private bool crouching = false;
 
     public Vector3 offset;
 
@@ -34,10 +35,14 @@ public class PlayerController : MonoBehaviour
     public AudioClip footstep2;
     private AudioSource source;
 
+    private Ray ray;
+
     // Start is called before the first frame update
     void Start()
     {
-        source = GetComponent<AudioSource>();
+        
+        baseSpeed = speed;
+        source = transform.GetChild(0).GetComponent<AudioSource>();
         cont = gameObject.GetComponent<CharacterController>();
         animator = transform.GetChild(0).GetComponent<Animator>();
         cmt = null;
@@ -46,7 +51,10 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(controlsEnabled)
+        ray = new Ray(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), transform.up);
+        Debug.DrawRay(ray.origin, ray.direction * 2);
+
+        if (controlsEnabled)
         {
             MovePlayer();
         }
@@ -66,6 +74,41 @@ public class PlayerController : MonoBehaviour
         cmt = curCam.transform;
 
         Fall();
+
+        if(Input.GetButtonDown("Crouch"))
+        {
+            if(!crouching)
+            {
+                crouching = !crouching;
+                speed = speed / 2;
+                source.volume = 0.15f;
+                cont.height /= 2;
+                cont.center = new Vector3(cont.center.x, cont.center.y - 0.505f, cont.center.z);
+            }
+
+            else
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(ray, 2))
+                {
+                    
+                    print("boob");
+                    
+                }
+
+                else
+                {
+                    crouching = !crouching;
+                    speed = baseSpeed;
+                    source.volume = 0.5f;
+                    cont.height *= 2;
+                    cont.center = new Vector3(cont.center.x, cont.center.y + 0.505f, cont.center.z);
+                }
+            }
+        }
+
+        animator.SetBool("IsCrouching", crouching);
+
     }
 
     private void Fall()
