@@ -30,6 +30,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Car 1-4.unity
     guid: 077ca856bbbbc4849ae9a783cea74f33
   - enabled: 1
+    path: Assets/Scenes/Car 1-4a.unity
+    guid: 2e7b3e6abbe384773bc6735f5da40949
+  - enabled: 1
+    path: Assets/Scenes/Car 1-4B.unity
+    guid: e67af2aeb3ff441929d88b6f0ab51c17
+  - enabled: 1
     path: Assets/Scenes/Car 1-5.unity
     guid: 93af7b6e6da584342aea882d42e6bf37
   - enabled: 1
