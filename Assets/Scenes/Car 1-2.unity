@@ -3655,7 +3655,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8000990877902480344, guid: 411954d3182c03a4eb751122a833acf5, type: 3}
       propertyPath: timeToWaitBeforeMove
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8000990877902480345, guid: 411954d3182c03a4eb751122a833acf5, type: 3}
       propertyPath: m_RootOrder
