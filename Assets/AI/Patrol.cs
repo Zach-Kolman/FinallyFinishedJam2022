@@ -85,7 +85,12 @@ public class Patrol : MonoBehaviour
         {
             if(Vector3.Distance(Player.transform.position, this.transform.position) < EnemyAgent.stoppingDistance*2)
             {
-                this.ArrivedAtPlayer = true;
+                if(!this.ArrivedAtPlayer)
+                {
+                    this.ArrivedAtPlayer = true;
+                    GameObject.Find("UIManager").GetComponent<UIManager>().GameIsOver(true);
+                }
+                Player.GetComponent<PlayerController>().enabled = false;
                 this.EnemyAnimator.SetBool(walkAnimVar, false);
                 EnemyAgent.SetDestination(this.transform.position);
             }
@@ -101,7 +106,20 @@ public class Patrol : MonoBehaviour
             float ViewAngleToPlayer = Vector3.Angle(DirectionToPlayer, this.transform.forward);
             if(DirectionToPlayer.magnitude < ViewDistance && ViewAngleToPlayer < ViewAngle)
             {
-                this.SeesPlayer = true;
+                int layerMask = 1 << 13;
+                layerMask = ~layerMask;
+                RaycastHit hit;
+                Vector3 HeadPosition = new Vector3(this.transform.position.x, this.transform.position.y+1.5f, this.transform.position.z);
+                Vector3 PlayerHeadPosition = new Vector3(Player.transform.position.x, Player.transform.position.y + 1.5f, Player.transform.position.z);
+                Debug.DrawRay(HeadPosition, (PlayerHeadPosition - HeadPosition), Color.white);
+                if (Physics.Raycast(HeadPosition, (PlayerHeadPosition - HeadPosition), out hit,
+                    Vector3.Distance(HeadPosition, PlayerHeadPosition), layerMask))
+                {
+                    if(hit.transform.gameObject == Player.gameObject && Player.GetComponent<PlayerStealth>().CanBeSeen)
+                    {
+                        this.SeesPlayer = true;
+                    }
+                }
             }
             else
             {

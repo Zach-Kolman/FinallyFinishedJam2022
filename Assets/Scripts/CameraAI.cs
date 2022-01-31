@@ -30,7 +30,7 @@ public class CameraAI : MonoBehaviour
             rotateSecurityCamera.canRotate = false;
             this.gameObject.GetComponent<AudioSource>().Play();
             other.GetComponent<PlayerController>().enabled = false;
-            uiManager.GameIsOver();
+            uiManager.GameIsOver(false);
         }   
     }
 }

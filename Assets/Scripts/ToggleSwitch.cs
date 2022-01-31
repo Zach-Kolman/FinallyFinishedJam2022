@@ -5,6 +5,7 @@ using UnityEngine;
 public class ToggleSwitch : MonoBehaviour
 {
     public Light light;
+    public UIManager uiManager;
     private bool isTriggering;
 
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class ToggleSwitch : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("Toggle switch with E");
+            uiManager.ShowSwitchText();
             isTriggering = true;
         }
     }
@@ -35,6 +37,7 @@ public class ToggleSwitch : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            uiManager.ShowSwitchText();
             isTriggering = false;
         }
     }
