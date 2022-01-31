@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class LandscapePan : MonoBehaviour
 {
-    public Transform point1;
-    public Transform point2;
 
     public float moveAmount;
 
