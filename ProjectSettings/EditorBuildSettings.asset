@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScreen.unity
     guid: 69d974862a0074b46ad1c63440b3a574
   - enabled: 1
+    path: Assets/Scenes/Car Z-1.unity
+    guid: 9320f8a8441826543b02f230c623d4a0
+  - enabled: 1
     path: Assets/Scenes/Car 1-0a.unity
     guid: 5cd39f18e3f5c44c682f242b0da7b985
   - enabled: 1
@@ -35,9 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Car 1-4B.unity
     guid: e67af2aeb3ff441929d88b6f0ab51c17
-  - enabled: 1
-    path: Assets/Scenes/Car Z-1.unity
-    guid: 9320f8a8441826543b02f230c623d4a0
   - enabled: 1
     path: Assets/Scenes/Car Z-2.unity
     guid: a2aa74f2fc1bcea4ea6149a0afd271d7

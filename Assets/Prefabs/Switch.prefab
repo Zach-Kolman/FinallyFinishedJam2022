@@ -170,6 +170,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: 6997c612945af11448168d64b6c0b0f1, type: 3}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: 6997c612945af11448168d64b6c0b0f1, type: 3}
+      propertyPath: m_Intensity
+      value: 1.18
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: 6997c612945af11448168d64b6c0b0f1, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: 6997c612945af11448168d64b6c0b0f1, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -2572967989333021709, guid: 6997c612945af11448168d64b6c0b0f1, type: 3}
       propertyPath: m_IsActive
       value: 0
